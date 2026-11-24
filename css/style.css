@@ -159,3 +159,20 @@ h1 span { color: var(--lime); }
 @media (min-width: 80em) {
   .site-header, .site-footer, main { width: min(100% - 5rem, var(--content)); }
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --ink: #f2f5f8;
+    --muted: #c4ced8;
+    --paper: #11161c;
+    --surface: #1b232c;
+    --navy: #0a1018;
+    --lime: #c6f36a;
+    --line: #66788a;
+    --link: #8ec5ff;
+  }
+  html, body { scrollbar-color: #66788a #11161c; }
+  .section-label, .card-number, .contact-link { color: var(--lime); }
+  .sports-table thead th { background: #26313d; color: #f2f5f8; }
+  .site-footer a { color: var(--link); }
+}
