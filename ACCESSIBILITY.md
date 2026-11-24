@@ -72,6 +72,8 @@ Stránka byla testována podle WCAG 2.2 na úrovni AA (všechna kritéria A i AA
 
 4. **Nález 4 – ruční kontrola nových scroll efektů: obsah by mohl zůstat skrytý.** Postupné odhalování sekcí závisí na JavaScriptu. Opraveno v commitu `c557efe`: třída `js` se přidává až ve spustitelném skriptu, takže při vypnutém JS je obsah viditelný, a při `prefers-reduced-motion: reduce` se vše okamžitě zobrazí bez animace.
 
+5. **Nález 5 – Lighthouse/axe: název odkazu nezačínal viditelným textem.** Odkaz se značkou `KD_` měl `aria-label` bez viditelného textu (2.5.3). Opraveno v commitu `acaef44` doplněním `KD_` na začátek přístupného názvu.
+
 ## Nástroje a ruční kontroly
 
 - Lighthouse, WAVE, W3C HTML validator
