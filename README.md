@@ -41,4 +41,4 @@ Veškerý pohyb se vypne při `prefers-reduced-motion: reduce`. Pokud JavaScript
 
 ## Historie
 
-Práce proběhla ve větvích `feature/obsah`, `feature/sirka`, `feature/tmavy-rezim`, `feature/vyssi-kontrast`, `feature/omezeny-pohyb`, `feature/pruhlednost`, `feature/vynucene-barvy`, `feature/kombinace`, `fix/pristupnost`, `feature/nasazeni`, `docs/readme`, `feature/it-tema`, `fix/nazev-odkazu` a `feature/interakce`. V historii je vyřešený konflikt z větví `feature/barvy-a` a `feature/barvy-b`.
+Práce proběhla ve větvích `feature/obsah`, `feature/sirka`, `feature/tmavy-rezim`, `feature/vyssi-kontrast`, `feature/omezeny-pohyb`, `feature/pruhlednost`, `feature/vynucene-barvy`, `feature/kombinace`, `fix/pristupnost`, `feature/nasazeni`, `docs/readme`, `feature/it-tema`, `fix/nazev-odkazu`, `feature/interakce` a `fix/kontrast-filtru`. V historii je vyřešený konflikt z větví `feature/barvy-a` a `feature/barvy-b`.
