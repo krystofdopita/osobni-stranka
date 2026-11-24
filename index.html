@@ -18,7 +18,8 @@
       <a href="#o-mne"><span>01</span> O mně</a>
       <a href="#dovednosti"><span>02</span> Dovednosti</a>
       <a href="#projekty"><span>03</span> Projekty</a>
-      <a href="#kontakt"><span>04</span> Kontakt</a>
+      <a href="#github"><span>04</span> GitHub</a>
+      <a href="#kontakt"><span>05</span> Kontakt</a>
     </nav>
   </header>
   <main id="hlavni-obsah" tabindex="-1">
@@ -31,16 +32,17 @@
         <div class="hero-actions">
           <a class="button-link" href="#dovednosti">Co umím <span aria-hidden="true">↓</span></a>
           <a class="button-link button-link--ghost" href="#projekty">Projekty <span aria-hidden="true">→</span></a>
+          <button class="replay-button" type="button" id="replay-code">Přehrát kód <span aria-hidden="true">↻</span></button>
         </div>
       </div>
-      <div class="code-window" aria-hidden="true">
-        <div class="code-top"><span></span><span></span><span></span><em>kristof.ts</em></div>
-        <pre><code><span class="c-key">const</span> kristof = {
-  <span class="c-key">role</span>: <span class="c-str">"student IT"</span>,
-  <span class="c-key">skills</span>: [<span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>, <span class="c-str">"JS"</span>],
-  <span class="c-key">also</span>: [<span class="c-str">"Python"</span>, <span class="c-str">"Java/C#"</span>, <span class="c-str">"SQL"</span>],
-  <span class="c-key">mode</span>: <span class="c-str">"učím se každý den"</span>
-};</code></pre>
+      <div class="code-wrap">
+        <div class="code-window" id="code-window" aria-hidden="true">
+          <div class="code-top"><span></span><span></span><span></span><em>y.ts</em></div>
+          <pre><code><span class="code-line" style="--line-delay: 60ms"><span class="c-key">const</span> y = {</span><span class="code-line" style="--line-delay: 140ms">  <span class="c-key">role</span>: <span class="c-str">"student IT"</span>,</span><span class="code-line" style="--line-delay: 220ms">  <span class="c-key">skills</span>: [<span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>, <span class="c-str">"JS"</span>],</span><span class="code-line" style="--line-delay: 300ms">  <span class="c-key">also</span>: [<span class="c-str">"Python"</span>, <span class="c-str">"Java/C#"</span>, <span class="c-str">"SQL"</span>],</span><span class="code-line" style="--line-delay: 380ms">  <span class="c-key">mode</span>: <span class="c-str">"učím se každý den"</span></span><span class="code-line" style="--line-delay: 460ms">};</span></code></pre>
+        </div>
+        <div class="orbit" aria-hidden="true">
+          <span style="--i: 0">HTML</span><span style="--i: 1">CSS</span><span style="--i: 2">JS</span><span style="--i: 3">Python</span><span style="--i: 4">SQL</span>
+        </div>
       </div>
       <p class="hero-decoration" aria-hidden="true">IT<span> / </span>ALL</p>
     </section>
@@ -118,8 +120,46 @@
       </div>
     </section>
 
+    <section class="github section-shell" id="github" aria-labelledby="github-nadpis">
+      <div class="section-heading reveal">
+        <p class="section-label">04 // GITHUB</p>
+        <h2 id="github-nadpis">Projekty, které už visí na GitHubu.</h2>
+        <p>Klikni na kartu nebo ji projdi klávesnicí — rozbalí se detail a spustí se krátká animace. Štítky nahoře fungují jako filtr.</p>
+      </div>
+      <div class="repo-filters reveal" role="group" aria-label="Filtrovat projekty podle technologie">
+        <button class="repo-filter" type="button" data-filter="all" aria-pressed="true">Vše</button>
+        <button class="repo-filter" type="button" data-filter="web" aria-pressed="false">Web</button>
+        <button class="repo-filter" type="button" data-filter="java" aria-pressed="false">Java</button>
+        <button class="repo-filter" type="button" data-filter="game" aria-pressed="false">Hry</button>
+      </div>
+      <p class="repo-status" aria-live="polite">Zobrazeny 3 projekty.</p>
+      <div class="repo-grid">
+        <details class="repo-card reveal" data-tags="web">
+          <summary><span class="repo-index">01</span><span class="repo-name">osobni-stranka</span><span class="repo-language">HTML · CSS · JS</span><span class="repo-chevron" aria-hidden="true">+</span></summary>
+          <div class="repo-detail">
+            <p>Aktuální osobní stránka: sémantické HTML, responzivní CSS a JavaScript pro scrollové efekty.</p>
+            <a href="https://github.com/krystofdopita/osobni-stranka">Otevřít repozitář <span aria-hidden="true">↗</span></a>
+          </div>
+        </details>
+        <details class="repo-card reveal" data-tags="java game">
+          <summary><span class="repo-index">02</span><span class="repo-name">EFN</span><span class="repo-language">Java · Swing</span><span class="repo-chevron" aria-hidden="true">+</span></summary>
+          <div class="repo-detail">
+            <p>Escape from the Island — 2D hra, ve které prozkoumáváš místnosti, sbíráš klíče, odemykáš budovy a unikáš z ostrova.</p>
+            <a href="https://github.com/krystofdopita/EFN">Otevřít repozitář <span aria-hidden="true">↗</span></a>
+          </div>
+        </details>
+        <details class="repo-card reveal" data-tags="java game">
+          <summary><span class="repo-index">03</span><span class="repo-name">merrychrystlerproject</span><span class="repo-language">Java</span><span class="repo-chevron" aria-hidden="true">+</span></summary>
+          <div class="repo-detail">
+            <p>LETHE — textové dobrodružství v konzoli: prozkoumáváš neznámý svět, sbíráš předměty a bojuješ s nepřáteli.</p>
+            <a href="https://github.com/krystofdopita/merrychrystlerproject">Otevřít repozitář <span aria-hidden="true">↗</span></a>
+          </div>
+        </details>
+      </div>
+    </section>
+
     <section class="contact section-shell" id="kontakt" aria-labelledby="kontakt-nadpis">
-      <p class="section-label reveal">04 // KONTAKT</p>
+      <p class="section-label reveal">05 // KONTAKT</p>
       <div class="contact-grid reveal">
         <h2 id="kontakt-nadpis">Máš tip, projekt nebo otázku?</h2>
         <div>
