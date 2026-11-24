@@ -225,3 +225,20 @@ nav a, .contact-link, .site-footer a { transition: color 180ms ease, text-decora
   a, nav a, .contact-link, .site-footer a { color: LinkText; }
   .hero { forced-color-adjust: auto; }
 }
+@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
+  :root {
+    --ink: #ffffff;
+    --muted: #ffffff;
+    --paper: #000000;
+    --surface: #000000;
+    --navy: #000000;
+    --lime: #ffff00;
+    --line: #ffffff;
+    --link: #ffff00;
+  }
+  .hero { background: #000000; color: #ffffff; }
+  .hero-intro, .eyebrow, .section-label, .card-number { color: #ffffff; }
+  .contact-link, .site-footer a { color: #ffff00; }
+  .interest-card { border: 2px solid #ffffff; }
+  .sports-table thead th { background: #000000; color: #ffffff; }
+}
