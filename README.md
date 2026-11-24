@@ -8,9 +8,9 @@ https://krystofdopita.github.io/osobni-stranka/
 
 ## Struktura
 
-- `index.html` — úvod, O mně, dovednosti, školní projekty a kontakt
+- `index.html` — úvod, O mně, dovednosti, školní projekty, GitHub projekty a kontakt
 - `css/style.css` — moderní vizuál mobile first, scrollové efekty a media rules
-- `js/main.js` — ukazatel posuvu, postupné odhalování sekcí a zvýraznění aktivní položky navigace
+- `js/main.js` — ukazatel posuvu, odhalování sekcí, aktivní navigace, orbitální animace a přehrání kódu
 - `images/` — IT ilustrace ve formátu SVG
 - `ACCESSIBILITY.md` — hodnocení WCAG 2.2 a zdokumentované nálezy
 
@@ -19,7 +19,11 @@ https://krystofdopita.github.io/osobni-stranka/
 - tenký ukazatel průběhu čtení nahoře nad stránkou (dekorativní, skrytý před čtečkami),
 - jemné odhalování sekcí a karet při vstupu do zorného pole,
 - zvýraznění aktuální sekce v navigaci,
-- mírný posun síťky a „okna s kódem“ v úvodu podle scrollu.
+- mírný posun síťky a „okna s kódem“ v úvodu podle scrollu,
+- po prvním posunu se kolem okna s kódem rozeběhne orbit technologických štítků,
+- tlačítko „Přehrát kód“ znovu odhaluje řádky proměnné `y` a spustí jiskrový efekt,
+- karty GitHub projektů se dají otevřít kliknutím i klávesnicí (`details`/`summary`) a při otevření se krátce animují,
+- štítky Vše / Web / Java / Hry projekty filtrují; změna se ohlásí čtečkám přes `aria-live`.
 
 Veškerý pohyb se vypne při `prefers-reduced-motion: reduce`. Pokud JavaScript není dostupný, zůstává veškerý obsah viditelný.
 
@@ -37,4 +41,4 @@ Veškerý pohyb se vypne při `prefers-reduced-motion: reduce`. Pokud JavaScript
 
 ## Historie
 
-Práce proběhla ve větvích `feature/obsah`, `feature/sirka`, `feature/tmavy-rezim`, `feature/vyssi-kontrast`, `feature/omezeny-pohyb`, `feature/pruhlednost`, `feature/vynucene-barvy`, `feature/kombinace`, `fix/pristupnost`, `feature/nasazeni`, `docs/readme` a `feature/it-tema`. V historii je vyřešený konflikt z větví `feature/barvy-a` a `feature/barvy-b`.
+Práce proběhla ve větvích `feature/obsah`, `feature/sirka`, `feature/tmavy-rezim`, `feature/vyssi-kontrast`, `feature/omezeny-pohyb`, `feature/pruhlednost`, `feature/vynucene-barvy`, `feature/kombinace`, `fix/pristupnost`, `feature/nasazeni`, `docs/readme`, `feature/it-tema`, `fix/nazev-odkazu` a `feature/interakce`. V historii je vyřešený konflikt z větví `feature/barvy-a` a `feature/barvy-b`.

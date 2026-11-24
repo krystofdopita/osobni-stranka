@@ -59,8 +59,8 @@ Stránka byla testována podle WCAG 2.2 na úrovni AA (všechna kritéria A i AA
 | 3.3.4 Error Prevention (Legal, Financial, Data) | AA | Nevztahuje se | Žádné transakce. |
 | 3.3.7 Redundant Entry | A | Nevztahuje se | Nic se nezadává dvakrát. |
 | 3.3.8 Accessible Authentication (Minimum) | AA | Nevztahuje se | Žádné přihlašování. |
-| 4.1.2 Name, Role, Value | A | Splněno | Sémantické prvky a odkazy s názvem z textu. |
-| 4.1.3 Status Messages | AA | Nevztahuje se | Žádné dynamické stavové zprávy. |
+| 4.1.2 Name, Role, Value | A | Splněno | Sémantické prvky, odkazy s názvem z textu, `details`/`summary` a filtry s `aria-pressed`. |
+| 4.1.3 Status Messages | AA | Splněno | Filtr projektů mění text v oblasti `aria-live="polite"`, takže čtečka ohlásí počet zobrazených projektů. |
 
 ## Nálezy a jejich opravy
 
