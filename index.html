@@ -4,30 +4,37 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="Osobní stránka Kryštofa Dopity — student IT, dovednosti, školní projekty a kontakt.">
+  <meta name="description" content="Osobní stránka Kryštofa Dopity — student IT, dovednosti, projekty a kontakt.">
   <title>Kryštof Dopita — student IT</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
 <body>
   <div class="scroll-progress" aria-hidden="true"></div>
-  <a class="skip-link" href="#hlavni-obsah">Přeskočit na hlavní obsah</a>
+  <a class="skip-link" href="#obsah">Přejít na obsah</a>
+
   <header class="site-header">
-    <a class="brand" href="#uvod" aria-label="KD_ — Kryštof Dopita, zpět na úvod">KD<span>_</span></a>
+    <div class="header-copy">
+      <h1><a href="#uvod">Kryštof Dopita</a></h1>
+      <p>Student IT, který se učí každý den.</p>
+    </div>
     <nav aria-label="Hlavní navigace">
-      <a href="#o-mne"><span>01</span> O mně</a>
-      <a href="#dovednosti"><span>02</span> Dovednosti</a>
-      <a href="#projekty"><span>03</span> Projekty</a>
-      <a href="#github"><span>04</span> GitHub</a>
-      <a href="#kontakt"><span>05</span> Kontakt</a>
+      <ul>
+        <li><a href="#o-mne"><span>01</span> O mně</a></li>
+        <li><a href="#projekty"><span>02</span> Projekty</a></li>
+        <li><a href="#dovednosti"><span>03</span> Dovednosti</a></li>
+        <li><a href="#github"><span>04</span> GitHub</a></li>
+        <li><a href="#kontakt"><span>05</span> Kontakt</a></li>
+      </ul>
     </nav>
   </header>
-  <main id="hlavni-obsah" tabindex="-1">
+
+  <main id="obsah">
     <section class="hero" id="uvod" aria-labelledby="uvod-nadpis">
       <div class="hero-grid" aria-hidden="true"></div>
       <div class="hero-copy">
-        <p class="eyebrow"><span aria-hidden="true">&gt; </span>whoami</p>
-        <h1 id="uvod-nadpis">Ahoj, jsem <span>Kryštof<span class="cursor" aria-hidden="true">_</span></span></h1>
+        <p class="eyebrow"><span aria-hidden="true">&gt; </span>whoami <span class="negra-mark">negra</span></p>
+        <h2 class="hero-title" id="uvod-nadpis">Ahoj, jsem <span>Kryštof<span class="cursor" aria-hidden="true">_</span></span></h2>
         <p class="hero-intro">Student IT, kterého zajímá všechno od webu přes backend až po data. Učím se, tvořím a hledám první příležitost, kde můžu kód posunout dál.</p>
         <div class="hero-actions">
           <a class="button-link" href="#dovednosti">Co umím <span aria-hidden="true">↓</span></a>
@@ -61,60 +68,60 @@
       </div>
     </section>
 
-    <section class="skills section-shell" id="dovednosti" aria-labelledby="dovednosti-nadpis">
+    <section class="projects section-shell" id="projekty" aria-labelledby="projekty-nadpis">
       <div class="section-heading reveal">
-        <p class="section-label">02 // DOVEDNOSTI</p>
-        <h2 id="dovednosti-nadpis">Nástroje, se kterými pracuju.</h2>
-        <p>Základy, na kterých stavím — od rozvržení stránky přes programovací jazyky až po práci s daty.</p>
+        <p class="section-label">02 // PROJEKTY</p>
+        <h2 id="projekty-nadpis">Projekty, na kterých se učím.</h2>
+        <p>Tři ukázky toho, co už jsem postavil — od osobní stránky po hry v Javě.</p>
       </div>
-      <div class="skill-grid">
-        <article class="skill-card reveal">
-          <img src="images/web.svg" alt="Ikona lomených závorek a kódu v okně editoru" width="640" height="360">
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <img src="images/web.svg" alt="Okno editoru s lomenými závorkami a řádky kódu" width="640" height="360">
           <div class="card-copy">
             <span class="card-number">01 / WEB</span>
-            <h3>HTML, CSS a JavaScript</h3>
-            <p>Sémantické rozvržení, responzivní styl a interaktivita, která dává stránce život.</p>
+            <h3>Osobní stránka</h3>
+            <p>Sémantické HTML, responzivní CSS a JavaScript pro scrollové efekty, filtry a přístupnost.</p>
             <ul class="chip-list"><li>HTML</li><li>CSS</li><li>JS</li></ul>
           </div>
         </article>
-        <article class="skill-card reveal">
-          <img src="images/terminal.svg" alt="Ikona terminálu s výzvou a složenými závorkami" width="640" height="360">
+        <article class="project-card reveal">
+          <img src="images/terminal.svg" alt="Terminál s výzvou, výpisem a složenými závorkami" width="640" height="360">
           <div class="card-copy">
-            <span class="card-number">02 / KÓD</span>
-            <h3>Python a Java / C#</h3>
-            <p>Logika, funkce a objektové myšlení. Od rychlých skriptů po přehledné třídy a rozhraní.</p>
-            <ul class="chip-list"><li>Python</li><li>Java</li><li>C#</li></ul>
+            <span class="card-number">02 / JAVA</span>
+            <h3>Escape from the Island</h3>
+            <p>2D hra v Javě: prozkoumávání místností, sbírání klíčů, odemykání budov a pasti.</p>
+            <ul class="chip-list"><li>Java</li><li>Swing</li><li>Hra</li></ul>
           </div>
         </article>
-        <article class="skill-card reveal">
-          <img src="images/data.svg" alt="Ikona databáze s vrstvami tabulek a spojnicemi" width="640" height="360">
+        <article class="project-card reveal">
+          <img src="images/data.svg" alt="Vrstvená databáze s tabulkami a spojnicemi" width="640" height="360">
           <div class="card-copy">
-            <span class="card-number">03 / DATA</span>
-            <h3>SQL a databáze</h3>
-            <p>Návrh tabulek, vztahy mezi nimi a dotazy, které z dat vytěží přesně to, co potřebuju.</p>
-            <ul class="chip-list"><li>SQL</li><li>Modely</li><li>Dotazy</li></ul>
+            <span class="card-number">03 / JAVA</span>
+            <h3>LETHE</h3>
+            <p>Textové dobrodružství v konzoli: neznámý svět, předměty, nepřátelé a příběh krále.</p>
+            <ul class="chip-list"><li>Java</li><li>Konzole</li><li>Příběh</li></ul>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="projects section-shell" id="projekty" aria-labelledby="projekty-nadpis">
+    <section class="skills section-shell" id="dovednosti" aria-labelledby="dovednosti-nadpis">
       <div class="section-heading reveal">
-        <p class="section-label">03 // PROJEKTY</p>
-        <h2 id="projekty-nadpis">Školní projekty, které mi daly praxi.</h2>
-        <p>Ukázky úloh, na kterých jsem se učil propojovat teorii s kódem.</p>
+        <p class="section-label">03 // DOVEDNOSTI</p>
+        <h2 id="dovednosti-nadpis">Nástroje, se kterými pracuju.</h2>
+        <p>Základy, na kterých stavím — od rozvržení stránky přes programovací jazyky až po práci s daty.</p>
       </div>
       <div class="table-scroll reveal">
-        <table class="projects-table">
-          <caption>Příklady školních a profilových projektů</caption>
+        <table class="data-table">
+          <caption>Přehled mých dovedností a aktuálních zkušeností</caption>
           <thead>
-            <tr><th scope="col">Projekt</th><th scope="col">Technologie</th><th scope="col">Co jsem se naučil</th></tr>
+            <tr><th scope="col">Dovednost</th><th scope="col">Úroveň</th></tr>
           </thead>
           <tbody>
-            <tr><th scope="row">Osobní stránka</th><td>HTML, CSS, JavaScript</td><td>Responzivní layout, scroll efekty a přístupnost</td></tr>
-            <tr><th scope="row">Databáze knihovny</th><td>SQL</td><td>Návrh tabulek, vztahy a dotazy</td></tr>
-            <tr><th scope="row">Python nástroj</th><td>Python</td><td>Práce se soubory a jednoduchá automatizace</td></tr>
-            <tr><th scope="row">Objektový model</th><td>Java / C#</td><td>Třídy, dědičnost a rozhraní</td></tr>
+            <tr><th scope="row">HTML, CSS a JavaScript</th><td>Pracuji na této stránce, průběžně se zdokonaluji</td></tr>
+            <tr><th scope="row">Python</th><td>Základy, jednoduché skripty a automatizace</td></tr>
+            <tr><th scope="row">Java a C#</th><td>Objektové myšlení, školní projekty a hry</td></tr>
+            <tr><th scope="row">SQL a databáze</th><td>Základy dotazů, návrhu tabulek a vztahů</td></tr>
           </tbody>
         </table>
       </div>
@@ -162,16 +169,17 @@
       <p class="section-label reveal">05 // KONTAKT</p>
       <div class="contact-grid reveal">
         <h2 id="kontakt-nadpis">Máš tip, projekt nebo otázku?</h2>
-        <div>
+        <address>
           <p>Jsem student začátečník a rád se potkám nad kódem. Napiš mi, máš-li nápad, zpětnou vazbu nebo jen chceš říct ahoj.</p>
           <a class="contact-link" href="mailto:krystofkolumbus99@gmail.com">krystofkolumbus99@gmail.com <span aria-hidden="true">↗</span></a>
           <a class="contact-link contact-link--sub" href="https://github.com/krystofdopita">github.com/krystofdopita <span aria-hidden="true">↗</span></a>
-        </div>
+        </address>
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
-    <span>© 2026 Kryštof Dopita · postaveno s HTML, CSS a JS</span>
+    <p>© 2026 Kryštof Dopita · postaveno s HTML, CSS a JS</p>
     <div class="footer-links">
       <a href="mailto:krystofkolumbus99@gmail.com">Napiš mi e-mail</a>
       <a href="#uvod">Nahoru ↑</a>
