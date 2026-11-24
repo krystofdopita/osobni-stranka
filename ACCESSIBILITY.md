@@ -74,6 +74,8 @@ Stránka byla testována podle WCAG 2.2 na úrovni AA (všechna kritéria A i AA
 
 5. **Nález 5 – Lighthouse/axe: název odkazu nezačínal viditelným textem.** Odkaz se značkou `KD_` měl `aria-label` bez viditelného textu (2.5.3). Opraveno v commitu `acaef44` doplněním `KD_` na začátek přístupného názvu.
 
+6. **Nález 6 – Lighthouse/axe: aktivní filtr měl v tmavém režimu nedostatečný kontrast.** Bílý text na světlém akcentu `#a78bfa` dosahoval jen 2,72:1 (1.4.3). Opraveno v commitu `68932d3` tmavým textem; stejně upraven i skip link.
+
 ## Nástroje a ruční kontroly
 
 - Lighthouse, WAVE, W3C HTML validator
