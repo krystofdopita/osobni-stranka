@@ -4,85 +4,138 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="Osobní stránka Kryštofa Dopity — sport, projekty a kontakt.">
-  <title>Kryštof Dopita — osobní stránka</title>
+  <meta name="description" content="Osobní stránka Kryštofa Dopity — student IT, dovednosti, školní projekty a kontakt.">
+  <title>Kryštof Dopita — student IT</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
+  <div class="scroll-progress" aria-hidden="true"></div>
   <a class="skip-link" href="#hlavni-obsah">Přeskočit na hlavní obsah</a>
   <header class="site-header">
-    <a class="brand" href="#uvod" aria-label="Kryštof Dopita — úvod">KD<span>.</span></a>
+    <a class="brand" href="#uvod" aria-label="Kryštof Dopita — zpět na úvod">KD<span>_</span></a>
     <nav aria-label="Hlavní navigace">
-      <a href="#o-mne">O mně</a>
-      <a href="#zajmy">Moje zájmy</a>
-      <a href="#prehled">Přehled</a>
-      <a href="#kontakt">Kontakt</a>
+      <a href="#o-mne"><span>01</span> O mně</a>
+      <a href="#dovednosti"><span>02</span> Dovednosti</a>
+      <a href="#projekty"><span>03</span> Projekty</a>
+      <a href="#kontakt"><span>04</span> Kontakt</a>
     </nav>
   </header>
   <main id="hlavni-obsah" tabindex="-1">
     <section class="hero" id="uvod" aria-labelledby="uvod-nadpis">
-      <p class="eyebrow">Osobní stránka · sport a digitální projekty</p>
-      <h1 id="uvod-nadpis">Ahoj, jsem <span>Kryštof Dopita.</span></h1>
-      <p class="hero-intro">Baví mě sport, přehledná data a weby, které se snadno používají. Tohle je moje místo pro oblíbené sportovní světy a malé digitální projekty.</p>
-      <a class="button-link" href="#zajmy">Poznej moje zájmy <span aria-hidden="true">↓</span></a>
-      <div class="hero-decoration" aria-hidden="true">SPORT<br><span>×</span><br>WEB</div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span aria-hidden="true">&gt; </span>whoami</p>
+        <h1 id="uvod-nadpis">Ahoj, jsem <span>Kryštof<span class="cursor" aria-hidden="true">_</span></span></h1>
+        <p class="hero-intro">Student IT, kterého zajímá všechno od webu přes backend až po data. Učím se, tvořím a hledám první příležitost, kde můžu kód posunout dál.</p>
+        <div class="hero-actions">
+          <a class="button-link" href="#dovednosti">Co umím <span aria-hidden="true">↓</span></a>
+          <a class="button-link button-link--ghost" href="#projekty">Projekty <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="code-window" aria-hidden="true">
+        <div class="code-top"><span></span><span></span><span></span><em>kristof.ts</em></div>
+        <pre><code><span class="c-key">const</span> kristof = {
+  <span class="c-key">role</span>: <span class="c-str">"student IT"</span>,
+  <span class="c-key">skills</span>: [<span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>, <span class="c-str">"JS"</span>],
+  <span class="c-key">also</span>: [<span class="c-str">"Python"</span>, <span class="c-str">"Java/C#"</span>, <span class="c-str">"SQL"</span>],
+  <span class="c-key">mode</span>: <span class="c-str">"učím se každý den"</span>
+};</code></pre>
+      </div>
+      <p class="hero-decoration" aria-hidden="true">IT<span> / </span>ALL</p>
     </section>
-    <section class="about section-shell" id="o-mne" aria-labelledby="o-mne-nadpis">
-      <div class="section-label">01 / O mně</div>
-      <div>
-        <h2 id="o-mne-nadpis">Rád hledám příběh za výsledkem.</h2>
-        <p>Jsem Kryštof Dopita. Zajímám se o sport a o to, jak informace podat jednoduše a srozumitelně. Proto mě baví spojovat výsledky, tabulky a dění v týmech do přehledu, ve kterém se člověk rychle zorientuje.</p>
-        <p>Na této stránce najdeš témata, ke kterým se rád vracím, i můj sportovní přehled, který jsem vytvořil jako webový projekt.</p>
+
+    <section class="about section-shell reveal" id="o-mne" aria-labelledby="o-mne-nadpis">
+      <p class="section-label">01 // O MNĚ</p>
+      <div class="about-grid">
+        <h2 id="o-mne-nadpis">Z studenta se stává vývojář.</h2>
+        <div class="about-body">
+          <p>Jsem Kryštof Dopita a jsem student, který se v IT orientuje v šířku. Láká mě web, backend i práce s daty — jednoduše vše, co se dá z nápadu postavit na funkční řešení.</p>
+          <p>Každý projekt pro mě znamená novou věc, kterou si odnesu. Teď buduji základy, zkouším školní projekty a hledám příležitost, kde se můžu dál učit od zkušenějších.</p>
+          <ul class="tag-list" aria-label="Moje zaměření">
+            <li>Web</li><li>Backend</li><li>Databáze</li><li>Automatizace</li>
+          </ul>
+        </div>
       </div>
     </section>
-    <section class="interests section-shell" id="zajmy" aria-labelledby="zajmy-nadpis">
-      <div class="section-heading">
-        <div class="section-label">02 / Moje zájmy</div>
-        <h2 id="zajmy-nadpis">Sporty, které mě baví sledovat.</h2>
-        <p>Od velkých evropských večerů až po rychlé tempo zámořských soutěží.</p>
+
+    <section class="skills section-shell" id="dovednosti" aria-labelledby="dovednosti-nadpis">
+      <div class="section-heading reveal">
+        <p class="section-label">02 // DOVEDNOSTI</p>
+        <h2 id="dovednosti-nadpis">Nástroje, se kterými pracuju.</h2>
+        <p>Základy, na kterých stavím — od rozvržení stránky přes programovací jazyky až po práci s daty.</p>
       </div>
-      <div class="interest-grid">
-        <article class="interest-card">
-          <img src="images/fotbal.svg" alt="Fotbalový míč na zeleném hřišti pod večerní oblohou" width="640" height="420">
-          <div class="card-copy"><span class="card-number">01</span><h3>Fotbal</h3><p>Ligové příběhy, taktika a evropské večery, kdy rozhoduje každý gól.</p></div>
+      <div class="skill-grid">
+        <article class="skill-card reveal">
+          <img src="images/web.svg" alt="Ikona lomených závorek a kódu v okně editoru" width="640" height="360">
+          <div class="card-copy">
+            <span class="card-number">01 / WEB</span>
+            <h3>HTML, CSS a JavaScript</h3>
+            <p>Sémantické rozvržení, responzivní styl a interaktivita, která dává stránce život.</p>
+            <ul class="chip-list"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+          </div>
         </article>
-        <article class="interest-card">
-          <img src="images/hokej.svg" alt="Hokejista v červeném dresu s hokejkou na ledové ploše" width="640" height="420">
-          <div class="card-copy"><span class="card-number">02</span><h3>Hokej</h3><p>Rychlá týmová hra, česká extraliga a vypjaté souboje o každý bod.</p></div>
+        <article class="skill-card reveal">
+          <img src="images/terminal.svg" alt="Ikona terminálu s výzvou a složenými závorkami" width="640" height="360">
+          <div class="card-copy">
+            <span class="card-number">02 / KÓD</span>
+            <h3>Python a Java / C#</h3>
+            <p>Logika, funkce a objektové myšlení. Od rychlých skriptů po přehledné třídy a rozhraní.</p>
+            <ul class="chip-list"><li>Python</li><li>Java</li><li>C#</li></ul>
+          </div>
         </article>
-        <article class="interest-card">
-          <img src="images/basketbal.svg" alt="Basketbalový míč a koš ve večerní sportovní hale" width="640" height="420">
-          <div class="card-copy"><span class="card-number">03</span><h3>Basketbal</h3><p>NBA, výrazné individuální výkony a zápasy plné zvratů až do konce.</p></div>
+        <article class="skill-card reveal">
+          <img src="images/data.svg" alt="Ikona databáze s vrstvami tabulek a spojnicemi" width="640" height="360">
+          <div class="card-copy">
+            <span class="card-number">03 / DATA</span>
+            <h3>SQL a databáze</h3>
+            <p>Návrh tabulek, vztahy mezi nimi a dotazy, které z dat vytěží přesně to, co potřebuju.</p>
+            <ul class="chip-list"><li>SQL</li><li>Modely</li><li>Dotazy</li></ul>
+          </div>
         </article>
       </div>
     </section>
-    <section class="overview section-shell" id="prehled" aria-labelledby="prehled-nadpis">
-      <div class="section-heading">
-        <div class="section-label">03 / Můj sportovní přehled</div>
-        <h2 id="prehled-nadpis">Tři sporty, tři různé zážitky.</h2>
-        <p>Každý přináší jiné tempo, atmosféru i příběhy.</p>
+
+    <section class="projects section-shell" id="projekty" aria-labelledby="projekty-nadpis">
+      <div class="section-heading reveal">
+        <p class="section-label">03 // PROJEKTY</p>
+        <h2 id="projekty-nadpis">Školní projekty, které mi daly praxi.</h2>
+        <p>Ukázky úloh, na kterých jsem se učil propojovat teorii s kódem.</p>
       </div>
-      <div class="table-scroll">
-        <table class="sports-table">
-          <caption>Sporty a soutěže, které mě zajímají</caption>
-          <thead><tr><th scope="col">Sport</th><th scope="col">Soutěž</th><th scope="col">Co mě na ní baví</th></tr></thead>
+      <div class="table-scroll reveal">
+        <table class="projects-table">
+          <caption>Příklady školních a profilových projektů</caption>
+          <thead>
+            <tr><th scope="col">Projekt</th><th scope="col">Technologie</th><th scope="col">Co jsem se naučil</th></tr>
+          </thead>
           <tbody>
-            <tr><th scope="row">Fotbal</th><td>UEFA Champions League</td><td>Velké evropské zápasy a taktické souboje</td></tr>
-            <tr><th scope="row">Hokej</th><td>Tipsport extraliga</td><td>Rychlost hry a atmosféra na tribunách</td></tr>
-            <tr><th scope="row">Basketbal</th><td>NBA</td><td>Individuální výkony a napínavé koncovky</td></tr>
+            <tr><th scope="row">Osobní stránka</th><td>HTML, CSS, JavaScript</td><td>Responzivní layout, scroll efekty a přístupnost</td></tr>
+            <tr><th scope="row">Databáze knihovny</th><td>SQL</td><td>Návrh tabulek, vztahy a dotazy</td></tr>
+            <tr><th scope="row">Python nástroj</th><td>Python</td><td>Práce se soubory a jednoduchá automatizace</td></tr>
+            <tr><th scope="row">Objektový model</th><td>Java / C#</td><td>Třídy, dědičnost a rozhraní</td></tr>
           </tbody>
         </table>
       </div>
     </section>
+
     <section class="contact section-shell" id="kontakt" aria-labelledby="kontakt-nadpis">
-      <div class="section-label">04 / Kontakt</div>
-      <div>
-        <h2 id="kontakt-nadpis">Máš podobný sportovní zájem?</h2>
-        <p>Ozvi se mi — rád si vyměním tipy na zápasy, projekty i dobré sportovní příběhy.</p>
-        <a class="contact-link" href="mailto:krystofkolumbus99@gmail.com">krystofkolumbus99@gmail.com <span aria-hidden="true">↗</span></a>
+      <p class="section-label reveal">04 // KONTAKT</p>
+      <div class="contact-grid reveal">
+        <h2 id="kontakt-nadpis">Máš tip, projekt nebo otázku?</h2>
+        <div>
+          <p>Jsem student začátečník a rád se potkám nad kódem. Napiš mi, máš-li nápad, zpětnou vazbu nebo jen chceš říct ahoj.</p>
+          <a class="contact-link" href="mailto:krystofkolumbus99@gmail.com">krystofkolumbus99@gmail.com <span aria-hidden="true">↗</span></a>
+          <a class="contact-link contact-link--sub" href="https://github.com/krystofdopita">github.com/krystofdopita <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="site-footer"><span>© 2026 Kryštof Dopita</span><a href="mailto:krystofkolumbus99@gmail.com">Napiš mi e-mail</a></footer>
+  <footer class="site-footer">
+    <span>© 2026 Kryštof Dopita · postaveno s HTML, CSS a JS</span>
+    <div class="footer-links">
+      <a href="mailto:krystofkolumbus99@gmail.com">Napiš mi e-mail</a>
+      <a href="#uvod">Nahoru ↑</a>
+    </div>
+  </footer>
 </body>
 </html>

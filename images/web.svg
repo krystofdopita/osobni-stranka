@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111a3a"/>
+      <stop offset="1" stop-color="#241d46"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <g stroke="#ffffff" stroke-opacity="0.08">
+    <path d="M0 60h640M0 120h640M0 180h640M0 240h640M0 300h640"/>
+    <path d="M80 0v360M160 0v360M240 0v360M320 0v360M400 0v360M480 0v360M560 0v360"/>
+  </g>
+  <rect x="96" y="58" width="448" height="244" rx="18" fill="#0a1024" stroke="#46558a" stroke-width="2"/>
+  <path d="M96 104h448" stroke="#46558a" stroke-width="2"/>
+  <circle cx="126" cy="81" r="7" fill="#ff6b6b"/>
+  <circle cx="150" cy="81" r="7" fill="#ffd166"/>
+  <circle cx="174" cy="81" r="7" fill="#5eead4"/>
+  <text x="214" y="87" fill="#9aabc8" font-family="monospace" font-size="16">index.html</text>
+  <text x="148" y="248" fill="#b9a5ff" font-family="monospace" font-size="112" font-weight="700">&lt;/&gt;</text>
+  <path d="M390 176h126" stroke="#67e8c3" stroke-width="6" stroke-linecap="round"/>
+  <path d="M390 202h88" stroke="#67e8c3" stroke-opacity="0.5" stroke-width="6" stroke-linecap="round"/>
+  <path d="M390 228h108" stroke="#67e8c3" stroke-opacity="0.25" stroke-width="6" stroke-linecap="round"/>
+</svg>
