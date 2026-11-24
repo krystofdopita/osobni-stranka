@@ -1,6 +1,6 @@
 # Osobní stránka Kryštofa Dopity
 
-Osobní web studenta IT. Zaměřuje se na web, backend, databáze a automatizaci — tedy na vše, co se dá z nápadu postavit do funkčního řešení. Stránka je sémantická, ovladatelná klávesnicí, výrazně responzivní a přizpůsobuje se systémovému nastavení uživatele. Splňuje WCAG 2.2 na úrovni AA.
+Osobní web studenta IT. Zaměřuje se na web, backend, databáze a automatizaci — tedy na vše, co se dá z nápadu postavit do funkčního řešení. Stránka je sémantická, ovladatelná klávesnicí, výrazně responzivní a přizpůsobuje se systémovému nastavení uživatele. Splňuje WCAG 2.2 na úrovni AA a je zpracovaná podle dodané kostry.
 
 ## Nasazená verze
 
@@ -8,11 +8,13 @@ https://krystofdopita.github.io/osobni-stranka/
 
 ## Struktura
 
-- `index.html` — úvod, O mně, dovednosti, školní projekty, GitHub projekty a kontakt
+- `index.html` — hlavička s názvem, větou o mně a navigací jako seznam; `main#obsah` obsahuje úvod, O mně, Projekty, Dovednosti, GitHub a Kontakt
 - `css/style.css` — moderní vizuál mobile first, scrollové efekty a media rules
-- `js/main.js` — ukazatel posuvu, odhalování sekcí, aktivní navigace, orbitální animace a přehrání kódu
-- `images/` — IT ilustrace ve formátu SVG
-- `ACCESSIBILITY.md` — hodnocení WCAG 2.2 a zdokumentované nálezy
+- `js/main.js` — ukazatel posuvu, odhalování sekcí, aktivní navigace, orbitální animace, přehrání kódu a filtr projektů
+- `images/` — tři IT ilustrace ve formátu SVG; každý projektní článek má obrázek s výstižným `alt`
+- `ACCESSIBILITY.md` — výsledky nástrojů, nálezy s hashy, test media rules a 55 kritérií WCAG 2.2 A/AA
+
+Projekty jsou tři `article.card` s obrázky, dovednosti jsou tabulka se sloupci **Dovednost** a **Úroveň**, kontakt používá `<address>` s `mailto:`, patička obsahuje `© 2026 Kryštof Dopita`.
 
 ## Scrolling a interakce
 
@@ -31,14 +33,14 @@ Veškerý pohyb se vypne při `prefers-reduced-motion: reduce`. Pokud JavaScript
 
 | Pravidlo | Co se mění a proč |
 | --- | --- |
-| `min-width` 35 / 48 / 55 / 80 em | Základní rozvržení je pro nejmenší displej; navigace se mění ze čtyř dlaždic na vodorovnou lištu, karty z jednoho sloupce na tři a úvod se na velké obrazovce rozdělí na text a okno s kódem. |
-| `prefers-color-scheme` | Přepíná proměnné mezi světlým a tmavým schématem, `color-scheme` i barvu posuvníků. |
+| `min-width` 40 / 60 / 80 em | Základní rozvržení je pro nejmenší displej. Od 40 em se karty GitHub projektů řadí do dvou sloupců, od 60 em se navigace mění ze čtyř dlaždic na vodorovnou lištu, úvod se rozdělí na text a okno s kódem a projektní karty i sloupce dovedností dostávají finální rozvržení. Od 80 em se zvětší nadpis a okraje stránky. |
+| `prefers-color-scheme` | Přepíná proměnné mezi světlým a tmavým schématem, `color-scheme` i barvu posuvníků; v tmavém režimu má aktivní filtr tmavý text. |
 | `prefers-contrast: more` | Zvyšuje kontrast na AAA, zesiluje okraje, podtrhuje odkazy a skrývá dekorativní vrstvy pod obsahem. |
-| `prefers-reduced-motion` | Vypíná animaci kurzoru, odhalování sekcí, plynulé rolování i posun dekorací. |
+| `prefers-reduced-motion` | Vypíná animaci kurzoru, odhalování sekcí, plynulé rolování, orbit i posun dekorací. |
 | `prefers-reduced-transparency` | Mění poloprůhledné dekorativní barvy a pozadí na plné barvy. |
 | `forced-colors: active` | Používá systémové barvy, okraje karet a outline fokusu místo stínů a barevných výplní. |
 | Kombinace tmavý režim + vyšší kontrast | Nastaví bílý text na černém pozadí a žluté akcenty, aby se pravidla nepřepisovala. |
 
 ## Historie
 
-Práce proběhla ve větvích `feature/obsah`, `feature/sirka`, `feature/tmavy-rezim`, `feature/vyssi-kontrast`, `feature/omezeny-pohyb`, `feature/pruhlednost`, `feature/vynucene-barvy`, `feature/kombinace`, `fix/pristupnost`, `feature/nasazeni`, `docs/readme`, `feature/it-tema`, `fix/nazev-odkazu`, `feature/interakce` a `fix/kontrast-filtru`. V historii je vyřešený konflikt z větví `feature/barvy-a` a `feature/barvy-b`.
+Práce proběhla ve větvích `feature/obsah`, `feature/sirka`, `feature/tmavy-rezim`, `feature/vyssi-kontrast`, `feature/omezeny-pohyb`, `feature/pruhlednost`, `feature/vynucene-barvy`, `feature/kombinace`, `fix/pristupnost`, `feature/nasazeni`, `docs/readme`, `feature/it-tema`, `fix/nazev-odkazu`, `feature/interakce`, `fix/kontrast-filtru` a `feature/kostra`. V historii je vyřešený konflikt z větví `feature/barvy-a` a `feature/barvy-b`.
