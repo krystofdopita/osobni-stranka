@@ -123,3 +123,37 @@ h1 span { color: var(--lime); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0.01ms !important; }
 }
+
+@media (max-width: 55rem) {
+  .site-header, .site-footer, main { width: min(100% - 2rem, var(--content)); }
+  .site-header { align-items: flex-start; flex-direction: column; justify-content: center; gap: 0.75rem; padding-block: 1rem; }
+  nav { gap: 0.75rem 1rem; }
+  .hero { min-height: 25rem; padding: 2rem; }
+  .hero-decoration { right: 1.25rem; bottom: 1rem; font-size: clamp(2rem, 10vw, 4.5rem); }
+  .about, .contact { grid-template-columns: 1fr; gap: 0.5rem; }
+  .section-shell { padding-block: 3.5rem; }
+  .interest-grid { grid-template-columns: 1fr; }
+  .interest-card { display: grid; grid-template-columns: minmax(8rem, 0.8fr) minmax(0, 1.2fr); }
+  .interest-card img { height: 100%; min-height: 10rem; aspect-ratio: auto; }
+  .card-copy { align-self: center; padding: 1rem; }
+  .sports-table th, .sports-table td { padding: 0.75rem 0.6rem; }
+  .site-footer { align-items: flex-start; flex-direction: column; justify-content: center; gap: 0.25rem; padding-block: 1rem; }
+}
+
+@media (max-width: 35rem) {
+  nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; }
+  nav a { padding-block: 0.25rem; }
+  .hero { min-height: 24rem; margin-top: 1rem; padding: 1.5rem; border-radius: 1rem; }
+  h1 { font-size: clamp(2.5rem, 12vw, 4rem); }
+  .hero-intro { font-size: 1rem; }
+  .hero-decoration { font-size: 2rem; }
+  .section-shell { padding-block: 2.75rem; }
+  .interest-card { grid-template-columns: 1fr; }
+  .interest-card img { min-height: 0; aspect-ratio: 1.52; }
+  .sports-table th, .sports-table td { padding: 0.65rem 0.45rem; font-size: 0.8125rem; }
+  .sports-table thead th { font-size: 0.7rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+}
