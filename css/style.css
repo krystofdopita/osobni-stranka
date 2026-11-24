@@ -156,17 +156,6 @@ h1, h2, h3 { margin-top: 0; }
   letter-spacing: -0.065em;
 }
 .hero-title span { color: #b9a5ff; }
-.negra-mark {
-  display: inline-block;
-  margin-left: 0.4rem;
-  padding: 0.1rem 0.5rem;
-  border: 1px solid #b9a5ff;
-  border-radius: 999px;
-  color: #d3c7ff;
-  font-size: 0.65rem;
-  letter-spacing: 0.08em;
-  text-transform: none;
-}
 .cursor { animation: blink 1.1s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 .hero-intro {
@@ -615,8 +604,7 @@ address { font-style: normal; }
   .button-link--ghost, .replay-button { border-color: #ffffff; }
   .button-link--ghost:hover, .replay-button:hover { background: #000000; color: #ffffff; border-color: #ffffff; }
   .hero { grid-template-columns: 1fr; background: #000000; color: #ffffff; }
-  .hero .eyebrow, .hero-title span, .negra-mark { color: #ffff00; }
-  .negra-mark { border-color: #ffff00; }
+  .hero .eyebrow, .hero-title span { color: #ffff00; }
   .hero::after, .hero-grid, .hero-decoration, .code-window, .orbit { display: none; }
   .section-label, .card-number { color: #000000; }
   .project-card, .repo-card { border: 2px solid #000000; }
@@ -642,7 +630,7 @@ address { font-style: normal; }
 @media (forced-colors: active) {
   .scroll-progress { background: Highlight; }
   .project-card, .repo-card, .data-table th, .data-table td, .button-link, .replay-button, .skip-link,
-  .tag-list li, .chip-list li, .negra-mark { border: 1px solid CanvasText; }
+  .tag-list li, .chip-list li { border: 1px solid CanvasText; }
   a:focus-visible { outline: 3px solid Highlight; outline-offset: 2px; }
   a, nav a, .contact-link, .site-footer a { color: LinkText; }
   .hero { forced-color-adjust: auto; }
@@ -665,8 +653,7 @@ address { font-style: normal; }
     --link: #ffff00;
   }
   .hero { background: #000000; color: #ffffff; }
-  .hero .eyebrow, .hero-title span, .negra-mark, .section-label, .card-number { color: #ffff00; }
-  .negra-mark { border-color: #ffff00; }
+  .hero .eyebrow, .hero-title span, .section-label, .card-number { color: #ffff00; }
   .contact-link, .site-footer a { color: #ffff00; }
   .repo-filter[aria-pressed="true"] { background: #ffff00; color: #000000; }
   .project-card { border: 2px solid #ffffff; }
