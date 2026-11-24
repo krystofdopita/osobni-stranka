@@ -33,6 +33,9 @@ jobs:
         with:
           path: .
 
+      - name: Čekání na indexaci artefaktu
+        run: sleep 10
+
       - name: Nasazení
         id: deployment
         uses: actions/deploy-pages@v4
