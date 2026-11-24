@@ -107,6 +107,10 @@ h1 span { color: var(--lime); }
 .card-number { color: #678142; }
 .card-copy h3 { margin: 0.4rem 0; font-size: 1.4rem; letter-spacing: -0.04em; }
 .card-copy p { margin-bottom: 0; color: var(--muted); font-size: 0.95rem; }
+@keyframes fade-in-up { from { opacity: 0; transform: translateY(0.5rem); } to { opacity: 1; transform: translateY(0); } }
+.interest-card { animation: fade-in-up 350ms ease both; transition: transform 180ms ease; }
+.interest-card:hover { transform: translateY(-0.25rem); }
+nav a, .contact-link, .site-footer a { transition: color 180ms ease, text-decoration-color 180ms ease; }
 .table-scroll { width: 100%; }
 .sports-table { width: 100%; table-layout: fixed; border-collapse: collapse; border-radius: 0.75rem; background: var(--surface); }
 .sports-table caption { padding: 0 0 0.75rem; color: #53616d; font-size: 0.875rem; font-weight: 700; text-align: left; }
