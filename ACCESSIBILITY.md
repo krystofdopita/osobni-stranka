@@ -64,11 +64,11 @@ Stránka byla testována podle WCAG 2.2 na úrovni AA (všechna kritéria A i AA
 
 ## Nálezy a jejich opravy
 
-1. **Nález 1 – WAVE/Lighthouse: odkazy nebyly vizuálně odlišené a klikací plocha navigace byla malá.** Navigační odkazy neměly podtržení ani dostatečnou výšku (1.4.1, 2.5.8). Opraveno commitem ``.
+1. **Nález 1 – WAVE/Lighthouse: odkazy nebyly vizuálně odlišené a klikací plocha navigace byla malá.** Navigační odkazy neměly podtržení ani dostatečnou výšku (1.4.1, 2.5.8). Opraveno commitem ``4d23190``d8e21de``4d23190``c219f35``4d23190``d8e21de``4d23190``.
 
-2. **Nález 2 – WAVE Contrast Error: vedlejší text měl nedostatečný kontrast.** Barva `--muted: #667482` na pozadí `#f4f4ef` nedosahovala 4,5:1 (1.4.3). Změněno na `#4b5a68` v commitu ``.
+2. **Nález 2 – WAVE Contrast Error: vedlejší text měl nedostatečný kontrast.** Barva `--muted: #667482` na pozadí `#f4f4ef` nedosahovala 4,5:1 (1.4.3). Změněno na `#4b5a68` v commitu ``4d23190``d8e21de``4d23190``c219f35``4d23190``d8e21de``4d23190``.
 
-3. **Nález 3 – ruční kontrola: kontaktní odkazy nebyly podtrženy.** Barva sama nestačila k rozlišení odkazu (1.4.1). Opraveno commitem ``.
+3. **Nález 3 – ruční kontrola: kontaktní odkazy nebyly podtrženy.** Barva sama nestačila k rozlišení odkazu (1.4.1). Opraveno commitem ``4d23190``d8e21de``4d23190``c219f35``4d23190``d8e21de``4d23190``.
 
 ## Nástroje a ruční kontroly
 
