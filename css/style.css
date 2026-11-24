@@ -120,9 +120,9 @@ nav a, .contact-link, .site-footer a { transition: color 180ms ease, text-decora
 .sports-table tbody th { font-weight: 750; }
 .sports-table tbody tr:last-child th, .sports-table tbody tr:last-child td { border-bottom: 0; }
 .contact { display: grid; grid-template-columns: 1fr; gap: 0.5rem; border-bottom: 0; }
-.contact-link { display: inline-flex; align-items: center; gap: 0.6rem; color: var(--link); font-weight: 800; overflow-wrap: anywhere; }
+.contact-link { display: inline-flex; align-items: center; gap: 0.6rem; color: var(--link); font-weight: 800; overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: 0.2rem; }
 .site-footer { min-height: 5rem; color: var(--muted); font-size: 0.8125rem; align-items: flex-start; flex-direction: column; gap: 0.25rem; padding-block: 1rem; }
-.site-footer a { color: var(--link); font-weight: 700; text-underline-offset: 0.2rem; }
+.site-footer a { color: var(--link); font-weight: 700; text-decoration: underline; text-underline-offset: 0.2rem; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
