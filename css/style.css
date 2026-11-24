@@ -176,3 +176,31 @@ h1 span { color: var(--lime); }
   .sports-table thead th { background: #26313d; color: #f2f5f8; }
   .site-footer a { color: var(--link); }
 }
+@media (prefers-contrast: more) {
+  :root {
+    --ink: #000000;
+    --muted: #000000;
+    --paper: #ffffff;
+    --surface: #ffffff;
+    --navy: #000000;
+    --lime: #ffff00;
+    --line: #000000;
+    --link: #0000ee;
+  }
+  a, nav a, .contact-link, .site-footer a {
+    color: var(--link);
+    text-decoration: underline;
+    text-decoration-thickness: 0.125em;
+    text-underline-offset: 0.2em;
+  }
+  .button-link { background: #000000; color: #ffffff; border: 2px solid #000000; }
+  .hero { background: #000000; color: #ffffff; }
+  .hero-intro { color: #ffffff; }
+  .eyebrow, .section-label, .card-number { color: #000000; }
+  .hero-decoration { display: none; }
+  .interest-card { border: 2px solid #000000; }
+  .sports-table th, .sports-table td { border-bottom: 2px solid #000000; }
+  .sports-table thead th { background: #ffffff; color: #000000; }
+  .site-header, .section-shell { border-bottom-color: #000000; }
+  a:focus-visible { outline: 3px solid #000000; }
+}
