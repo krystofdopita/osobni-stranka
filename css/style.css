@@ -217,3 +217,11 @@ nav a, .contact-link, .site-footer a { transition: color 180ms ease, text-decora
     -webkit-backdrop-filter: none;
   }
 }
+@media (forced-colors: active) {
+  .interest-card, .sports-table th, .sports-table td, .button-link, .skip-link {
+    border: 1px solid CanvasText;
+  }
+  a:focus-visible { outline: 3px solid Highlight; outline-offset: 2px; }
+  a, nav a, .contact-link, .site-footer a { color: LinkText; }
+  .hero { forced-color-adjust: auto; }
+}
