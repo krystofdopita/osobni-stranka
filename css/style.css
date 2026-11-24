@@ -574,6 +574,7 @@ h2 {
   }
   html, body { scrollbar-color: #2b3a55 #080d18; }
   .projects-table thead th { background: #1d2a40; color: #edf3ff; }
+  .skip-link, .repo-filter[aria-pressed="true"] { color: #080e1c; }
 }
 
 @media (prefers-contrast: more) {
